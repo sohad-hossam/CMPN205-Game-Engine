@@ -1,0 +1,10 @@
+^C:\USERS\SOHAD\DOCUMENTS\UNIVERSITY\SENIOR-1 FALL 2022\CMPN205 COMPUTER GRAPHICS\CMPN205 PROJECT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project" "-BC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build" --check-stamp-file "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

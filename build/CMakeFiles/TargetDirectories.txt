@@ -1,0 +1,5 @@
+C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/CMakeFiles/GAME_APPLICATION.dir
+C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/vendor/glfw/CMakeFiles/ALL_BUILD.dir
+C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/vendor/glfw/src/CMakeFiles/glfw.dir

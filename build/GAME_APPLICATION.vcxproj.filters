@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\asset-loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\shader\shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\mesh\mesh-utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\sampler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\texture-utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\screenshot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\material\pipeline-state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\material\material.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\world.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\mesh-renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\free-camera-controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\movement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\systems\forward-renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\src\gl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui\imgui_impl\imgui_impl_glfw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui\imgui_impl\imgui_impl_opengl3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\play-state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\menu-state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\shader-test-state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\mesh-test-state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\transform-test-state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\pipeline-test-state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\texture-test-state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\sampler-test-state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\material-test-state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\entity-test-state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\renderer-test-state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\application.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\input\keyboard.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\input\mouse.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\asset-loader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\deserialize-utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\shader\shader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\mesh\vertex.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\mesh\mesh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\mesh\mesh-utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\sampler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\texture2d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\texture-utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\screenshot.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\material\pipeline-state.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\material\material.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\component.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\transform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\entity.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\world.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\camera.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\mesh-renderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\free-camera-controller.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\movement.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\component-deserializer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\systems\forward-renderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\systems\free-camera-controller.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\systems\movement.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1A487F1F-C59E-3F5B-AF86-A0C752BF2B38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FEC0C1F9-4E68-3A6B-A033-EDE4B6F10A81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

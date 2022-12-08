@@ -1,0 +1,10 @@
+^C:\USERS\SOHAD\DOCUMENTS\UNIVERSITY\SENIOR-1 FALL 2022\CMPN205 COMPUTER GRAPHICS\CMPN205 PROJECT - STUDENT VERSION\BUILD\CMAKEFILES\459F73CE38597826E38B4975510B8211\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project - Student Version" "-BC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project - Student Version/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project - Student Version/build/GFX-LAB.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

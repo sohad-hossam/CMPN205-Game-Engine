@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

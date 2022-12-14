@@ -13,11 +13,11 @@ namespace our {
     glm::mat4 Entity::getLocalToWorldMatrix() const {
         //TODO: (Req 8) Write this function
         Entity *entity = parent;
-        glm::mat4 combination = entity->localTransform.toMat4();
+        glm::mat4 combination = localTransform.toMat4();
         while(entity != NULL)
         {
-            entity = entity->parent;
             combination = entity->localTransform.toMat4()*combination;//msh mot2kda mn eltrteeb watch the video
+            entity = entity->parent;
         }
         return combination;
     }

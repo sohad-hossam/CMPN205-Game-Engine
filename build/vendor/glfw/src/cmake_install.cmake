@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/vendor/glfw/src
+# Install script for directory: C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/vendor/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

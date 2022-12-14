@@ -1,93 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\context.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\init.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\init.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\input.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\input.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\monitor.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\monitor.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\vulkan.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\vulkan.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\window.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\win32_init.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\win32_init.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\win32_joystick.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\win32_joystick.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\win32_monitor.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\win32_monitor.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\win32_time.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\win32_time.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\win32_thread.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\win32_thread.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\win32_window.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\win32_window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\wgl_context.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\wgl_context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\egl_context.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\egl_context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\osmesa_context.c">
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\osmesa_context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\internal.h">
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\internal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\mappings.h">
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\mappings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\vendor\glfw\src\glfw_config.h">
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\vendor\glfw\src\glfw_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include\GLFW\glfw3.h">
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include\GLFW\glfw3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include\GLFW\glfw3native.h">
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include\GLFW\glfw3native.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\win32_platform.h">
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\win32_platform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\win32_joystick.h">
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\win32_joystick.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\wgl_context.h">
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\wgl_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\egl_context.h">
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\egl_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\osmesa_context.h">
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\osmesa_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\src\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{1A487F1F-C59E-3F5B-AF86-A0C752BF2B38}</UniqueIdentifier>
+      <UniqueIdentifier>{21253E29-6A16-34A6-B0C7-83DAAC9C13BA}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{FEC0C1F9-4E68-3A6B-A033-EDE4B6F10A81}</UniqueIdentifier>
+      <UniqueIdentifier>{0CBC46E1-5512-3AE5-9146-9AB91F0FB6FC}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

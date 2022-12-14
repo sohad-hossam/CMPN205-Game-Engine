@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{AE05A5B5-E85F-32B0-B3DD-A606114A19D8}</ProjectGuid>
+    <ProjectGuid>{BD47BD83-D34A-30D2-8C37-759539389256}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GAME_APPLICATION.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GAME_APPLICATION</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GAME_APPLICATION.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GAME_APPLICATION</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\bin\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\bin\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GAME_APPLICATION.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GAME_APPLICATION</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\bin\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\bin\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GAME_APPLICATION.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GAME_APPLICATION</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -104,10 +104,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -120,8 +120,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/Debug/GAME_APPLICATION.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/bin/GAME_APPLICATION.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build/Debug/GAME_APPLICATION.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/bin/GAME_APPLICATION.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -130,7 +130,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -148,10 +148,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -164,8 +164,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/Release/GAME_APPLICATION.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/bin/GAME_APPLICATION.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build/Release/GAME_APPLICATION.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/bin/GAME_APPLICATION.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -174,7 +174,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -192,10 +192,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -208,8 +208,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/MinSizeRel/GAME_APPLICATION.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/bin/MinSizeRel/GAME_APPLICATION.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build/MinSizeRel/GAME_APPLICATION.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/bin/MinSizeRel/GAME_APPLICATION.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -218,7 +218,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -235,10 +235,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glfw\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glad\include;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glm;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -251,8 +251,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/RelWithDebInfo/GAME_APPLICATION.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/bin/RelWithDebInfo/GAME_APPLICATION.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build/RelWithDebInfo/GAME_APPLICATION.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/bin/RelWithDebInfo/GAME_APPLICATION.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -260,11 +260,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project" "-BC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build" --check-stamp-file "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine" "-BC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build" --check-stamp-file "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -272,12 +272,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project" "-BC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build" --check-stamp-file "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine" "-BC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build" --check-stamp-file "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -285,12 +285,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project" "-BC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build" --check-stamp-file "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine" "-BC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build" --check-stamp-file "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -298,12 +298,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project" "-BC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build" --check-stamp-file "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine" "-BC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build" --check-stamp-file "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -311,85 +311,85 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeCXXCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeRCCompiler.cmake;C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\3.25.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\main.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\play-state.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\menu-state.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\shader-test-state.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\mesh-test-state.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\transform-test-state.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\pipeline-test-state.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\texture-test-state.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\sampler-test-state.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\material-test-state.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\entity-test-state.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\states\renderer-test-state.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\application.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\application.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\input\keyboard.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\input\mouse.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\asset-loader.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\asset-loader.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\deserialize-utils.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\shader\shader.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\shader\shader.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\mesh\vertex.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\mesh\mesh.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\mesh\mesh-utils.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\mesh\mesh-utils.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\sampler.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\sampler.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\texture2d.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\texture-utils.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\texture-utils.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\screenshot.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\texture\screenshot.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\material\pipeline-state.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\material\pipeline-state.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\material\material.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\material\material.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\component.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\transform.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\transform.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\entity.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\entity.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\world.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\ecs\world.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\camera.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\camera.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\mesh-renderer.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\mesh-renderer.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\free-camera-controller.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\free-camera-controller.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\movement.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\movement.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\components\component-deserializer.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\systems\forward-renderer.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\systems\forward-renderer.cpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\systems\free-camera-controller.hpp" />
-    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\source\common\systems\movement.hpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\glad\src\gl.c" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui\imgui.cpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui\imgui_demo.cpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui\imgui_draw.cpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui\imgui_widgets.cpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui\imgui_impl\imgui_impl_glfw.cpp" />
-    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\vendor\imgui\imgui_impl\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\main.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\states\play-state.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\states\menu-state.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\states\shader-test-state.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\states\mesh-test-state.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\states\transform-test-state.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\states\pipeline-test-state.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\states\texture-test-state.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\states\sampler-test-state.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\states\material-test-state.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\states\entity-test-state.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\states\renderer-test-state.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\application.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\application.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\input\keyboard.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\input\mouse.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\asset-loader.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\asset-loader.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\deserialize-utils.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\shader\shader.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\shader\shader.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\mesh\vertex.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\mesh\mesh.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\mesh\mesh-utils.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\mesh\mesh-utils.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\texture\sampler.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\texture\sampler.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\texture\texture2d.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\texture\texture-utils.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\texture\texture-utils.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\texture\screenshot.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\texture\screenshot.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\material\pipeline-state.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\material\pipeline-state.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\material\material.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\material\material.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\ecs\component.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\ecs\transform.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\ecs\transform.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\ecs\entity.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\ecs\entity.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\ecs\world.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\ecs\world.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\components\camera.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\components\camera.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\components\mesh-renderer.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\components\mesh-renderer.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\components\free-camera-controller.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\components\free-camera-controller.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\components\movement.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\components\movement.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\components\component-deserializer.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\systems\forward-renderer.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\systems\forward-renderer.cpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\systems\free-camera-controller.hpp" />
+    <ClInclude Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\source\common\systems\movement.hpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\glad\src\gl.c" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui\imgui.cpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui\imgui_demo.cpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui\imgui_impl\imgui_impl_glfw.cpp" />
+    <ClCompile Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\vendor\imgui\imgui_impl\imgui_impl_opengl3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\ZERO_CHECK.vcxproj">
-      <Project>{CB826A0F-87E8-3B26-8E47-DD19D7F70F48}</Project>
+    <ProjectReference Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\ZERO_CHECK.vcxproj">
+      <Project>{8C98E71C-4599-3FE0-8058-8E9A8598BD5F}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\vendor\glfw\src\glfw.vcxproj">
-      <Project>{873BAC8F-A927-35E0-8597-821FDB6FDBF2}</Project>
+    <ProjectReference Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\vendor\glfw\src\glfw.vcxproj">
+      <Project>{7B944809-AC49-3910-BDCE-BCA5CD3E3B06}</Project>
       <Name>glfw</Name>
     </ProjectReference>
   </ItemGroup>

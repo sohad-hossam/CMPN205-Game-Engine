@@ -11,5 +11,8 @@ uniform vec4 tint;
 void main(){
     //TODO: (Req 7) Modify the following line to compute the fragment color
     // by multiplying the tint with the vertex color
-    frag_color = vec4(1.0);
-}
+
+    vec4 color= tint * fs_in.color;   //tint*color
+    frag_color = color;
+    //frag_color = vec4(1.0);
+} 

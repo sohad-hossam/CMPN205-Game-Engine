@@ -35,7 +35,7 @@ namespace our {
             static_assert(std::is_base_of<Component, T>::value, "T must inherit from Component");
             //TODO: (Req 8) Create an component of type T, set its "owner" to be this entity, then push it into the component's list
             // Don't forget to return a pointer to the new component
-            T *newComp = new T;
+            T *newComp = new T();
             newComp->owner = this;// momken tb2a & bs still msh 3rfa
             components.push_back(newComp);
             return newComp;
@@ -47,16 +47,16 @@ namespace our {
         T* getComponent(){
             //TODO: (Req 8) Go through the components list and find the first component that can be dynamically cast to "T*".
             // Return the component you found, or return null of nothing was found.
-            T *searchedComp;
-            for (size_t i = 0; i < components.size(); i++)
+            
+            for (int i = 0; i != components.size(); i++)
             {
-                searchedComp = getComponent<T>(i);
-                if(searchedComp != NULL)
+                if(getComponent<T>(i) != nullptr)
                 {
-                    return searchedComp;
+                    return getComponent<T>(i);
                 }
             }
-            return searchedComp;
+            
+            return nullptr;
         }
 
         // This template method dynami and returns a pointer to it
@@ -75,15 +75,16 @@ namespace our {
         void deleteComponent(){
             //TODO: (Req 8) Go through the components list and find the first component that can be dynamically cast to "T*".
             // If found, delete the found component and remove it from the components list
-            for (size_t i = 0; i < components.size(); i++)
+            for (int i = 0; i != components.size(); i++)
             {
-                searchedComp = getComponent<T>(i);
-                if(searchedComp != NULL)
+                if(getComponent<T>(i) != nullptr)
                 {
                     deleteComponent(i);
                     return;
                 }
             }
+            
+            
         }
 
         // This template method searhes for a component of type T and deletes it
@@ -94,6 +95,7 @@ namespace our {
                 delete *it;
                 components.erase(it);
             }
+            
         }
 
         // This template method searhes for the given component and deletes it
@@ -101,11 +103,17 @@ namespace our {
         void deleteComponent(T const* component){
             //TODO: (Req 8) Go through the components list and find the given component "component".
             // If found, delete the found component and remove it from the components list
-            for (int i = 0; i < components.size(); i++)
+            int i = 0;
+            for (auto it = components.begin(); it != components.end(); it++)
             {
-                if(component == components[i])
+                if(component == *it)
                 {
                     deleteComponent(i);
+                    return;
+                }
+                else
+                {
+                    i++;
                 }
             }
         }
@@ -113,10 +121,11 @@ namespace our {
         // Since the entity owns its components, they should be deleted alongside the entity
         ~Entity(){
             //TODO: (Req 8) Delete all the components in "components".
-            while(components.size() != 0)
+            for (auto it = components.begin(); it != components.end(); it++)
             {
-                deleteComponent(0);
+                delete *it;
             }
+            components.clear();
         }
 
         // Entities should not be copyable

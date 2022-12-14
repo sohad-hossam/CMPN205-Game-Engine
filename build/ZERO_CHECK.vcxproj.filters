@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205 Project\build\CMakeFiles\2a6008bd5be4d39c37e395f8cd08d187\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\CMakeFiles\698a6acdec1594e5a3230a8eb5a6f03f\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{F4FFBA75-8045-3353-9632-7164D02F4B90}</UniqueIdentifier>
+      <UniqueIdentifier>{CC205D6C-C1BF-3D93-99F7-1518DF27E656}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

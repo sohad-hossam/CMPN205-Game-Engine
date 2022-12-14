@@ -1,6 +1,6 @@
-^C:\USERS\SOHAD\DOCUMENTS\UNIVERSITY\SENIOR-1 FALL 2022\CMPN205 COMPUTER GRAPHICS\CMPN205 PROJECT\BUILD\CMAKEFILES\2A6008BD5BE4D39C37E395F8CD08D187\GENERATE.STAMP.RULE
+^C:\USERS\SOHAD\DOCUMENTS\UNIVERSITY\SENIOR-1 FALL 2022\CMPN205 COMPUTER GRAPHICS\CMPN205-GAME-ENGINE\BUILD\CMAKEFILES\698A6ACDEC1594E5A3230A8EB5A6F03F\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project" "-BC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205 Project/build/GFX-LAB.sln"
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine" "-BC:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/build/GFX-LAB.sln"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

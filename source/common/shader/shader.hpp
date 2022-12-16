@@ -82,12 +82,12 @@ namespace our {
             glUniformMatrix4fv(loc, 1, false, &matrix[0][0]);
         }
 
-        //TODO: (Req 1) Delete the copy constructor and assignment operator.
-        //Question: Why do we delete the copy constructor and assignment operator?
+        // TODO: (Req 1) Delete the copy constructor and assignment operator.
+        // Question: Why do we delete the copy constructor and assignment operator?
+        // it is done so that if the object is destroyed and it was copied elsewhere it will be destroyed as well
         ShaderProgram (const ShaderProgram&) = delete;
         ShaderProgram& operator= (const ShaderProgram&) = delete;
     };
-    //test 6 7 8 9 not expected to work 
 }
 
 #endif

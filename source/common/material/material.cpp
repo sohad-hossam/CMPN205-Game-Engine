@@ -59,9 +59,14 @@ namespace our {
         //bind the texture and sampler to a texture unit
         //bind for texture and sampler
         glActiveTexture(GL_TEXTURE0);
-        texture->bind();
-        sampler->bind(0);
-       
+        if(texture != NULL)
+        {
+            texture->bind();
+        }
+        if(sampler != NULL)
+        {
+            sampler->bind(0);
+        }
         //send the unit number to the uniform variable tex "0 ->index of texture unit used"
         //set for shader
         shader->set("tex", 0);

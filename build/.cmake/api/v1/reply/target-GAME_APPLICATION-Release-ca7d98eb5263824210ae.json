@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/bin/RelWithDebInfo/GAME_APPLICATION.exe"
+			"path" : "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/bin/GAME_APPLICATION.exe"
 		},
 		{
-			"path" : "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/bin/RelWithDebInfo/GAME_APPLICATION.pdb"
+			"path" : "C:/Users/sohad/Documents/University/Senior-1 Fall 2022/CMPN205 Computer graphics/CMPN205-Game-Engine/bin/GAME_APPLICATION.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -52,7 +52,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG"
 				},
 				{
 					"fragment" : "-std:c++17"
@@ -126,7 +126,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /Zi /O2 /Ob1 /DNDEBUG"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG"
 				}
 			],
 			"includes" : 
@@ -166,11 +166,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 2,
 			"id" : "glfw::@31bd9730e6b8c71cc656"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "GAME_APPLICATION::@6890427a1f51a3e7e1df",
@@ -179,16 +179,16 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:console",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "vendor\\glfw\\src\\RelWithDebInfo\\glfw3.lib",
+				"fragment" : "vendor\\glfw\\src\\Release\\glfw3.lib",
 				"role" : "libraries"
 			},
 			{

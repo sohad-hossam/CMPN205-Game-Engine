@@ -23,21 +23,23 @@ namespace our {
             // Hints: the sky will be draw after the opaque objects so we would need depth testing but which depth funtion should we pick?
             // We will draw the sphere from the inside, so what options should we pick for the face culling.
             PipelineState skyPipelineState{};
-            skyPipelineState.faceCulling.enabled=true;
+            //in the skybox the camera is placed inside of a box so we want to see their front, rather than their back
+            skyPipelineState.faceCulling.enabled=true; 
             skyPipelineState.faceCulling.culledFace = GL_FRONT;
 
-            skyPipelineState.depthTesting.enabled = true;
-            skyPipelineState.depthTesting.function = GL_LEQUAL;
+            skyPipelineState.depthTesting.enabled = true; 
+            //This allows the skybox to be render behind any other object in the scene.
+            skyPipelineState.depthTesting.function = GL_LEQUAL;   
 
-            
+            //To render images with different levels of transparency 
             skyPipelineState.blending.enabled = true;
             skyPipelineState.blending.equation = GL_FUNC_ADD;
             skyPipelineState.blending.sourceFactor = GL_SRC_ALPHA;
             skyPipelineState.blending.destinationFactor = GL_ONE_MINUS_SRC_ALPHA;
         
-            skyPipelineState.colorMask = {true, true, true, true}; // To know how to use it, check glColorMask
-            skyPipelineState.depthMask = false;
-
+            skyPipelineState.colorMask = {true, true, true, true}; 
+            skyPipelineState.depthMask = false; //enable writing to the depth bufffer
+            //to render the sky behind the objects
             // Load the sky texture (note that we don't need mipmaps since we want to avoid any unnecessary blurring while rendering the sky)
             std::string skyTextureFile = config.value<std::string>("sky", "");
             Texture2D* skyTexture = texture_utils::loadImage(skyTextureFile, false);

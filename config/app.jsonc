@@ -33,6 +33,7 @@
       },
       "meshes": {
         "cube": "assets/models/cube.obj",
+        "cat": "assets/models/cat.obj",
         "monkey": "assets/models/monkey.obj",
         "plane": "assets/models/plane.obj",
         "sphere": "assets/models/sphere.obj"
@@ -139,13 +140,13 @@
         ],
         "children": [
           {
-            "position": [1, -1, -1],
-            "rotation": [45, 45, 0],
-            "scale": [0.1, 0.1, 1.0],
+            "position": [0, -1, -1],
+            "rotation": [-90, 180, 0],
+            "scale": [0.02, 0.02, 0.02],
             "components": [
               {
                 "type": "Mesh Renderer",
-                "mesh": "cube",
+                "mesh": "cat",
                 "material": "metal"
               }
             ]

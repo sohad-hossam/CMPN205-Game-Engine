@@ -39,12 +39,13 @@ namespace our {
 
         void setupMesh(const std::vector<Vertex>& vertices, const std::vector<unsigned int>& elements )
         {
-            glGenVertexArrays(1, &VAO);//generate vertex array object names
+            glGenVertexArrays(1, &VAO);//generate vertex array object names , 1 is the number of vertex array objects to generate
             glGenBuffers(1, &VBO);// generate buffer object names
             glGenBuffers(1, &EBO);
   
             glBindVertexArray(VAO);//bind a vertex array object
             glBindBuffer(GL_ARRAY_BUFFER, VBO);// bind creation of vertex buffer
+            //glarraybuffer -> vertex arrtributes
 
             glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO); //creation of element buffer
    

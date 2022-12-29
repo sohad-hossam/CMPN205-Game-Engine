@@ -167,7 +167,7 @@ namespace our {
         //the camera component view matrix:
         auto owner =camera->getOwner();
         auto M = owner->getLocalToWorldMatrix();
-        glm::vec3 cen = M*glm::vec4(0.0f, 0.0f, -1.0f, 1.0f);    //(0,0,-1)
+        glm::vec3 cen = M*glm::vec4(0.0f, 0.0f, -1.0f, 0.0f);    //(0,0,-1)
         glm::vec3 cameraForward = cen;  
 
         std::sort(transparentCommands.begin(), transparentCommands.end(), [cameraForward](const RenderCommand& first, const RenderCommand& second){

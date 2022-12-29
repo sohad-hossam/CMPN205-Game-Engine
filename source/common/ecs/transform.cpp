@@ -13,13 +13,13 @@ namespace our {
  /////////////////////////////////////
 // MY PART
 
-glm::mat4 sca = glm::mat4(1.0f);
-glm::mat4 rot = glm::mat4(1.0f);
-glm::mat4 trans = glm::mat4(1.0f);
+glm::mat4 sca = glm::mat4(1.0f); //create temprorary identity matrix for scaling
+glm::mat4 rot = glm::mat4(1.0f);//create temprorary identity matrix for roatation
+glm::mat4 trans = glm::mat4(1.0f);//create temprorary identity matrix for translation
 
  sca = glm::scale(sca,scale); 
  rot = glm::yawPitchRoll(rotation.y, rotation.x, rotation.z); //yaw y , pitch x , roll z
- trans = glm::translate(trans,position);
+ trans = glm::translate(trans,position); //translate the matrix by the position vector
 
 
 glm::mat4 final(1.0f);

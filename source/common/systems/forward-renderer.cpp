@@ -1,6 +1,7 @@
 #include "forward-renderer.hpp"
 #include "../mesh/mesh-utils.hpp"
 #include "../texture/texture-utils.hpp"
+#include<iostream>
 
 namespace our {
 
@@ -136,6 +137,7 @@ namespace our {
     {
         // First of all, we search for a camera and for all the mesh renderers
         CameraComponent* camera = nullptr;
+        light_comps.clear();
         opaqueCommands.clear();
         transparentCommands.clear();
         for(auto entity : world->getEntities()){
@@ -156,6 +158,10 @@ namespace our {
                 // Otherwise, we add it to the opaque command list
                     opaqueCommands.push_back(command);
                 }
+            }
+            if(entity->getComponent<LightComponent>()!= NULL)
+            {
+                light_comps.push_back(entity->getComponent<LightComponent>());
             }
         }
 
@@ -195,6 +201,7 @@ namespace our {
         glColorMask(true, true, true, true);
         //depth mask to true
         glDepthMask(true);
+        
 
         // If there is a postprocess material, bind the framebuffer
         if(postprocessMaterial){
@@ -212,9 +219,52 @@ namespace our {
         {
             //to draw opaque comp we need to set up material
             opaque_comp.material->setup(); 
-            //then we need to  transform the component to the camera view then afterwards it is projected  
+            //then we need to  transform the component to the camera view then afterwards it is projected 
+            opaque_comp.material->shader->set("object_to_world", opaque_comp.localToWorld); 
+			opaque_comp.material->shader->set("object_to_world_inv_transpose", glm::transpose(glm::inverse(opaque_comp.localToWorld))); 
             opaque_comp.material->shader->set("transform", VP * opaque_comp.localToWorld);
-            opaque_comp.mesh->draw();  
+            opaque_comp.material->shader->set("view_projection", VP );
+            glm::vec3 eye = M * glm::vec4(0.0f, 0.0f, 0.0f, 1.0f);
+            opaque_comp.material->shader->set("camera_position", eye);
+            int light_count = light_comps.size();
+            opaque_comp.material->shader->set("light_count", light_count);
+            for (int i = 0; i < light_comps.size(); i++)
+            {
+                std::string index_of_light = "lights[" + std::to_string(i) + "].";
+
+                opaque_comp.material->shader->set(index_of_light + "color", glm::normalize(light_comps[i]->color));
+                opaque_comp.material->shader->set(index_of_light + "diffuse", glm::normalize(light_comps[i]->diffuse));
+                opaque_comp.material->shader->set(index_of_light + "specular", glm::normalize(light_comps[i]->specular));
+                opaque_comp.material->shader->set(index_of_light + "ambient", glm::normalize(light_comps[i]->ambient));
+                if(light_comps[i]->type == LightType::DIRECTIONAL)
+                {
+                    opaque_comp.material->shader->set(index_of_light + "direction", glm::vec3(glm::normalize(light_comps[i]->getOwner()->getLocalToWorldMatrix() * glm::vec4(0.0f,-1.0f, 0.0f,0.0f))));
+                    opaque_comp.material->shader->set(index_of_light + "type", 0);
+                    //std::cout << glm::vec3(glm::normalize(light_comps[i]->getOwner()->getLocalToWorldMatrix() * glm::vec4(1.0f,1.0f, 0.0f,0.0f))).r << std::endl;
+
+                }
+                else if(light_comps[i]->type == LightType::POINT)
+                {
+                    opaque_comp.material->shader->set(index_of_light + "position", glm::vec3(light_comps[i]->getOwner()->getLocalToWorldMatrix() * glm::vec4(light_comps[i]->getOwner()->localTransform.position, 1.0f)));
+                    opaque_comp.material->shader->set(index_of_light + "attenuation_constant", light_comps[i]->attenuation.constant);
+                    opaque_comp.material->shader->set(index_of_light + "attenuation_linear", light_comps[i]->attenuation.linear);
+                    opaque_comp.material->shader->set(index_of_light + "attenuation_quadratic", light_comps[i]->attenuation.quadratic);
+                    opaque_comp.material->shader->set(index_of_light + "type", 1);
+                }
+                else if(light_comps[i]->type == LightType::SPOT)
+                {
+                    opaque_comp.material->shader->set(index_of_light + "type", 2);
+                    opaque_comp.material->shader->set(index_of_light + "position", glm::vec3(light_comps[i]->getOwner()->getLocalToWorldMatrix() * glm::vec4(light_comps[i]->getOwner()->localTransform.position, 1.0f)));
+                    opaque_comp.material->shader->set(index_of_light + "direction", glm::vec3(glm::normalize(light_comps[i]->getOwner()->getLocalToWorldMatrix() * glm::vec4(0.0f,-1.0f,0.0f, 0.0f))));
+                    opaque_comp.material->shader->set(index_of_light + "attenuation_constant", light_comps[i]->attenuation.constant);
+                    opaque_comp.material->shader->set(index_of_light + "attenuation_linear", light_comps[i]->attenuation.linear);
+                    opaque_comp.material->shader->set(index_of_light + "attenuation_quadratic", light_comps[i]->attenuation.quadratic);
+                    opaque_comp.material->shader->set(index_of_light + "inner_angle", glm::radians(light_comps[i]->spotAngle.inner));
+                    opaque_comp.material->shader->set(index_of_light + "outer_angle", glm::radians(light_comps[i]->spotAngle.outer));
+                
+                }
+            }
+            opaque_comp.mesh->draw();
         }
 
         
@@ -255,9 +305,49 @@ namespace our {
         // Don't forget to set the "transform" uniform to be equal the model-view-projection matrix for each render command
         for (auto transparent_comp : transparentCommands)
         {
-            //same as drawing the opaque material 
-            transparent_comp.material->setup();
-            transparent_comp.material->shader->set("transform",VP * transparent_comp.localToWorld);
+            transparent_comp.material->setup(); 
+            //then we need to  transform the component to the camera view then afterwards it is projected 
+            transparent_comp.material->shader->set("object_to_world", transparent_comp.localToWorld); 
+			transparent_comp.material->shader->set("object_to_world_inv_transpose", glm::transpose(glm::inverse(transparent_comp.localToWorld))); 
+            transparent_comp.material->shader->set("transform", VP * transparent_comp.localToWorld);
+            glm::vec3 eye = M * glm::vec4(0.0f, 0.0f, 0.0f, 1.0f);
+            transparent_comp.material->shader->set("camera_position", eye);
+            transparent_comp.material->shader->set("view_projection", VP );
+            int light_count = light_comps.size();
+            transparent_comp.material->shader->set("light_count", light_count);
+            for (int i = 0; i < light_comps.size(); i++)
+            {
+                std::string index_of_light = "lights[" + std::to_string(i) + "].";
+
+                transparent_comp.material->shader->set(index_of_light + "color", glm::normalize(light_comps[i]->color));
+                transparent_comp.material->shader->set(index_of_light + "specular", glm::normalize(light_comps[i]->specular));
+                transparent_comp.material->shader->set(index_of_light + "diffuse", glm::normalize(light_comps[i]->diffuse));
+                transparent_comp.material->shader->set(index_of_light + "ambient", glm::normalize(light_comps[i]->ambient));
+                if(light_comps[i]->type == LightType::DIRECTIONAL)
+                {
+                    transparent_comp.material->shader->set(index_of_light + "type", 0);
+                    transparent_comp.material->shader->set(index_of_light + "direction", glm::normalize(light_comps[i]->getOwner()->getLocalToWorldMatrix() * glm::vec4(0.0f,-1.0f, 0.0f,0.0f)));
+                }
+                else if(light_comps[i]->type == LightType::POINT)
+                {
+                    transparent_comp.material->shader->set(index_of_light + "type", 1);
+                    transparent_comp.material->shader->set(index_of_light + "position", glm::vec3(light_comps[i]->getOwner()->getLocalToWorldMatrix() * glm::vec4(light_comps[i]->getOwner()->localTransform.position, 1.0f)));
+                    transparent_comp.material->shader->set(index_of_light + "attenuation_constant", light_comps[i]->attenuation.constant);
+                    transparent_comp.material->shader->set(index_of_light + "attenuation_linear", light_comps[i]->attenuation.linear);
+                    transparent_comp.material->shader->set(index_of_light + "attenuation_quadratic", light_comps[i]->attenuation.quadratic);
+                }
+                else if(light_comps[i]->type == LightType::SPOT)
+                {
+                    transparent_comp.material->shader->set(index_of_light + "type", 2);
+                    transparent_comp.material->shader->set(index_of_light + "position", glm::vec3(light_comps[i]->getOwner()->getLocalToWorldMatrix() * glm::vec4(light_comps[i]->getOwner()->localTransform.position, 1.0f)));
+                    transparent_comp.material->shader->set(index_of_light + "direction", glm::normalize(light_comps[i]->getOwner()->getLocalToWorldMatrix() * glm::vec4(0.0f,0.0f,1.0f, 0.0f)));
+                    transparent_comp.material->shader->set(index_of_light + "attenuation_constant", light_comps[i]->attenuation.constant);
+                    transparent_comp.material->shader->set(index_of_light + "attenuation_linear", light_comps[i]->attenuation.linear);
+                    transparent_comp.material->shader->set(index_of_light + "attenuation_quadratic", light_comps[i]->attenuation.quadratic);
+                    transparent_comp.material->shader->set(index_of_light + "inner_angle", glm::radians(light_comps[i]->spotAngle.inner));
+                    transparent_comp.material->shader->set(index_of_light + "outer_angle", glm::radians(light_comps[i]->spotAngle.outer));
+                }
+            }
             transparent_comp.mesh->draw();
         }
 
@@ -268,6 +358,8 @@ namespace our {
             glBindFramebuffer(GL_FRAMEBUFFER, 0);
             glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
             glClear(GL_COLOR_BUFFER_BIT);
+
+
             //TODO: (Req 11) Setup the postprocess material and draw the fullscreen triangle
             postprocessMaterial->setup();
             glBindVertexArray(postProcessVertexArray);

@@ -1,32 +1,31 @@
 #pragma once
 
+#include <shader/shader.hpp>
+#include <mesh/mesh.hpp>
+#include <texture/texture2d.hpp>
+#include <texture/texture-utils.hpp>
 #include <application.hpp>
-#include "components/collisions.hpp"
-#include <ecs/world.hpp>
-#include <systems/forward-renderer.hpp>
-#include <systems/free-camera-controller.hpp>
-#include <systems/movement.hpp>
-#include <asset-loader.hpp>
-#include <systems/Collision.hpp>
+#include "play-state.hpp"
 
-// This state shows how to use the ECS framework and deserialization.
-class Playstate: public our::State {
-
+#include <stdint.h>
+#include <iostream>
+using namespace std;
+// This state tests and shows how to use the Texture2D class.
+class Winstate : public our::State
+{
     
     our::World world;
     our::ForwardRenderer renderer;
     our::FreeCameraControllerSystem cameraController;
     our::MovementSystem movementSystem;
     our::CollisionSystem collisionsystem;
-    
-    public:
-    bool won=false;
-    int  score;
    
-
+ 
+  
+ 
     void onInitialize() override {
         // First of all, we get the scene configuration from the app config
-        auto& config = getApp()->getConfig()["scene"];
+        auto& config = getApp()->getConfig()["winner"];
         // If we have assets in the scene config, we deserialize them
         if(config.contains("assets")){
             our::deserializeAllAssets(config["assets"]);
@@ -53,32 +52,20 @@ class Playstate: public our::State {
         // Get a reference to the keyboard object
         auto& keyboard = getApp()->getKeyboard();
 
-        if(keyboard.justPressed(GLFW_KEY_ESCAPE)){
-            // If the escape  key is pressed in this frame, go to the play state
-            getApp()->changeState("menu");
-        }
-
-        if(collisionsystem.winner)
-        {
-             
-             getApp()->changeState("winstate");
-        
-        }
+         
         auto size = getApp()->getFrameBufferSize();
-    
+        
     }
- void onImmediateGui() {
 
-        //ImGui::ShowDemoWindow();
-        ImGui::Begin("data", 0);
+    void onImmediateGui() {
 
       
-        ImGui::Text("Score: %d", collisionsystem.score);
-       
-
+        ImGui::Begin("winner", 0);
+        ImGui::Text("CONGRATULATIONS CAT,HAVE FUN EATING THAT FISH!");
         ImGui::End();
 
-    }
+
+   }
     void onDestroy() override {
         // Don't forget to destroy the renderer
         renderer.destroy();

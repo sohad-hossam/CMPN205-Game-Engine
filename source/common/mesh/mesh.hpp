@@ -34,23 +34,26 @@ namespace our {
              elementCount=(GLsizei)elements.size(); //storing with each call the element count we end at the summition to use in draw
              setupMesh(vertices,elements); //call of set up on every construction
 
-            
         }
 
         void setupMesh(const std::vector<Vertex>& vertices, const std::vector<unsigned int>& elements )
         {
-            glGenVertexArrays(1, &VAO);//generate vertex array object names , 1 is the number of vertex array objects to generate
+            glGenVertexArrays(1, &VAO);//generate vertex array object names
             glGenBuffers(1, &VBO);// generate buffer object names
             glGenBuffers(1, &EBO);
   
             glBindVertexArray(VAO);//bind a vertex array object
+            
             glBindBuffer(GL_ARRAY_BUFFER, VBO);// bind creation of vertex buffer
-            //glarraybuffer -> vertex arrtributes
 
             glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO); //creation of element buffer
+
+
    
             glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(Vertex), &vertices[0], GL_STATIC_DRAW);  //creates and initializes vertex array buffer object's data store 
   
+
+
             // vertex positions
             glEnableVertexAttribArray(ATTRIB_LOC_POSITION);	//Enable or disable a generic vertex attribute array , here the position arrtribute by use of the constatnts defined above
             glVertexAttribPointer(ATTRIB_LOC_POSITION, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)0); //define an array of generic vertex attribute data
@@ -64,7 +67,6 @@ namespace our {
             glEnableVertexAttribArray(ATTRIB_LOC_COLOR);	
             glVertexAttribPointer(ATTRIB_LOC_COLOR, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof(Vertex), (void*)offsetof(Vertex, color));
 
-     
 
             glBufferData(GL_ELEMENT_ARRAY_BUFFER, elements.size() * sizeof(unsigned int), 
                      &elements[0], GL_STATIC_DRAW);//creates and initializes a element buffer object's data store

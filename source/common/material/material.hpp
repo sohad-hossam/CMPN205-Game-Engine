@@ -4,7 +4,7 @@
 #include "../texture/texture2d.hpp"
 #include "../texture/sampler.hpp"
 #include "../shader/shader.hpp"
-
+#include<iostream>
 #include <glm/vec4.hpp>
 #include <json/json.hpp>
 
@@ -53,13 +53,39 @@ namespace our {
         void deserialize(const nlohmann::json& data) override;
     };
 
+    //adding light material: =========================New part========================================================
+    class LightMaterial:public TexturedMaterial
+    {
+    public:
+    //their mapping:
+        Texture2D* albedo;   //diffuse and ambient
+        Texture2D * specular;  //specular
+        Texture2D* roughness;     //shininess
+        Texture2D* ambient_occlusion;  //ambient
+        Texture2D* emission;
+        Sampler* sampler;
+
+
+        void setup() const override;
+        void deserialize(const nlohmann::json& data) override;
+    };
+
     // This function returns a new material instance based on the given type
     inline Material* createMaterialFromType(const std::string& type){
-        if(type == "tinted"){
+        if(type == "tinted")
+        {
             return new TintedMaterial();
-        } else if(type == "textured"){
+        } 
+        else if(type == "textured")
+        {
             return new TexturedMaterial();
-        } else {
+        } 
+        else if(type == "Light")  
+        {
+            return new LightMaterial();
+        } 
+        else 
+        {
             return new Material();
         }
     }

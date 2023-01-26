@@ -59,8 +59,7 @@ namespace our {
                entities.erase(*i);
                delete *i;
             }
-            
-
+            markedForRemoval.clear();
         }
 
         //This deletes all entities in the world

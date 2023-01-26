@@ -8,6 +8,130 @@
     },
     "fullscreen": false
   },
+  "winner": {
+    "renderer": {
+      "sky": "assets/textures/sky.jpg",
+      "postprocess": "assets/shaders/postprocess/grain.frag"
+    },
+    "assets": {
+      "shaders": {
+        "tinted": {
+          "vs": "assets/shaders/tinted.vert",
+          "fs": "assets/shaders/tinted.frag"
+        },
+        "textured": {
+          "vs": "assets/shaders/textured.vert",
+          "fs": "assets/shaders/textured.frag"
+        }
+      },
+      "textures": {
+        "brownfur": "assets/textures/brownfur.png",
+        "blackbox": "assets/textures/blackbox.jpeg"
+      },
+      "meshes": {
+        "cat": "assets/models/cat.obj",
+        "cube": "assets/models/cube.obj",
+        "plane": "assets/models/plane.obj",
+        "sphere": "assets/models/sphere.obj"
+      },
+      "samplers": {
+        "default": {},
+        "pixelated": {
+          "MAG_FILTER": "GL_NEAREST"
+        }
+      },
+      "materials": {
+        "cat": {
+          "type": "textured",
+          "shader": "textured",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            }
+          },
+          "tint": [1, 1, 1, 1],
+          "texture": "brownfur",
+          "sampler": "default"
+        },
+        "blackbox": {
+          "type": "textured",
+          "shader": "textured",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            }
+          },
+          "tint": [1, 1, 1, 1],
+          "texture": "blackbox",
+          "sampler": "default"
+        }
+      }
+    },
+    "world": [
+      {
+        "position": [0, 0, 10],
+        "components": [
+          {
+            "type": "Camera"
+          },
+          {
+            "type": "Free Camera Controller"
+          }
+        ],
+        "children": [
+          {
+            "name": "cat",
+            "position": [0, -1, -7],
+            "rotation": [-90, 360, 0],
+            "scale": [0.2, 0.1, 0.1],
+            "components": [
+              {
+                "type": "Mesh Renderer",
+                "mesh": "cat",
+                "material": "cat"
+              },
+              {
+                "type": "Collision",
+                "center": [0.03, 0.03, 0.03],
+                "radius": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "bush",
+        "position": [0, -1, 0],
+        "rotation": [-90, 0, 0],
+        "scale": [10, 10, 1],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "cube",
+            "material": "blackbox"
+          }
+        ]
+      },
+      {
+        "position": [0, -1, 0],
+        "rotation": [-90, 0, 0],
+        "scale": [10, 10, 1],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "blackbox"
+          }
+        ]
+      }
+    ]
+  },
   "scene": {
     "renderer": {
       "sky": "assets/textures/sky.jpg",
@@ -22,6 +146,10 @@
         "textured": {
           "vs": "assets/shaders/textured.vert",
           "fs": "assets/shaders/textured.frag"
+        },
+        "light": {
+          "vs": "assets/shaders/light.vert",
+          "fs": "assets/shaders/light.frag"
         }
       },
       "textures": {
@@ -29,19 +157,36 @@
         "grass": "assets/textures/grass_ground_d.jpg",
         "wood": "assets/textures/wood.jpg",
         "glass": "assets/textures/glass-panels.png",
-        "monkey": "assets/textures/monkey.png"
+        "monkey": "assets/textures/monkey.png",
+        "blue": "assets/textures/blue.png",
+        "brownfur": "assets/textures/brownfur.png",
+        "blackbox": "assets/textures/blackbox.jpeg",
+        "coin": "assets/textures/cointrans.jpg",
+        "floor": "assets/textures/mud.jpg",
+        "fish": "assets/textures/fish.png",
+        "bushes": "assets/textures/bushes.jpg",
+        "albedo-bush": "assets/textures/albedo.jpg",
+        "specular": "assets/textures/specular.jpg",
+        "roughness": "assets/textures/roughness.jpg",
+        "ambient-occlusion": "assets/textures/bushes.jpg",
+        "emissive": "assets/textures/emissive.jpg"
       },
       "meshes": {
-        "cube": "assets/models/cube.obj",
         "cat": "assets/models/cat.obj",
+        "cube": "assets/models/cube.obj",
         "monkey": "assets/models/monkey.obj",
         "plane": "assets/models/plane.obj",
-        "sphere": "assets/models/sphere.obj"
+        "sphere": "assets/models/sphere.obj",
+        "fish": "assets/models/fish.obj",
+        "smoothsphere": "assets/models/smooth-sphere.obj"
       },
       "samplers": {
         "default": {},
         "pixelated": {
           "MAG_FILTER": "GL_NEAREST"
+        },
+        "grass": {
+          "GL_TEXTURE_WRAP": "GL_REPEAT"
         }
       },
       "materials": {
@@ -57,6 +202,26 @@
             }
           },
           "tint": [0.45, 0.4, 0.5, 1]
+        },
+        "fish": {
+          "type": "Light",
+          "shader": "light",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            }
+          },
+          "tint": [0, 1, 0, 1],
+          "texture": "fish",
+          "sampler": "default",
+          "albedo": "fish",
+          "ambient_occlusion": "ambient-occlusion",
+          "specular": "specular",
+          "roughness": "roughness",
+          "emission": "emissive"
         },
         "glass": {
           "type": "textured",
@@ -80,7 +245,28 @@
           "texture": "glass",
           "sampler": "pixelated"
         },
-        "grass": {
+        "coin": {
+          "type": "textured",
+          "shader": "textured",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            },
+            "blending": {
+              "enabled": true,
+              "sourceFactor": "GL_SRC_ALPHA",
+              "destinationFactor": "GL_ONE_MINUS_SRC_ALPHA"
+            },
+            "depthMask": false
+          },
+          "transparent": true,
+          "tint": [1, 1, 0.2, 0.5],
+          "texture": "coin"
+        },
+        "cat": {
           "type": "textured",
           "shader": "textured",
           "pipelineState": {
@@ -92,10 +278,29 @@
             }
           },
           "tint": [1, 1, 1, 1],
-          "texture": "grass",
+          "texture": "brownfur",
           "sampler": "default"
         },
-        "monkey": {
+        "bushes": {
+          "type": "Light",
+          "shader": "light",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            }
+          },
+          "tint": [0, 1, 0, 1],
+          "texture": "bushes",
+          "albedo": "bushes",
+          "ambient_occlusion": "ambient-occlusion",
+          "specular": "specular",
+          "roughness": "roughness",
+          "emission": "emissive"
+        },
+        "blackbox": {
           "type": "textured",
           "shader": "textured",
           "pipelineState": {
@@ -107,12 +312,12 @@
             }
           },
           "tint": [1, 1, 1, 1],
-          "texture": "monkey",
-          "sampler": "default"
+          "texture": "blackbox",
+          "sampler": "grass"
         },
         "moon": {
-          "type": "textured",
-          "shader": "textured",
+          "type": "Light",
+          "shader": "light",
           "pipelineState": {
             "faceCulling": {
               "enabled": false
@@ -121,9 +326,44 @@
               "enabled": true
             }
           },
+          "transparent": true,
           "tint": [1, 1, 1, 1],
           "texture": "moon",
           "sampler": "default"
+        },
+        "floor": {
+          "type": "textured",
+          "shader": "textured",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            }
+          },
+          "tint": [1, 1, 1, 1],
+          "texture": "floor",
+          "sampler": "default"
+        },
+        "sun": {
+          "type": "Light",
+          "shader": "light",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            }
+          },
+          "tint": [0, 1, 0, 1],
+          "texture": "coin",
+          "albedo": "bushes",
+          "roughness": "roughness",
+          "specular": "specular",
+          "emission": "emissive",
+          "ambient_occlusion": "ambient-occlusion"
         }
       }
     },
@@ -140,31 +380,36 @@
         ],
         "children": [
           {
+            "name": "cat",
             "position": [0, -1, -1],
             "rotation": [-90, 180, 0],
-            "scale": [0.02, 0.02, 0.02],
+            "scale": [0.03, 0.02, 0.02],
             "components": [
               {
                 "type": "Mesh Renderer",
                 "mesh": "cat",
-                "material": "metal"
+                "material": "cat"
+              },
+              {
+                "type": "Collision",
+                "center": [0.03, 0.03, 0.03],
+                "radius": 0.5
               }
             ]
           }
         ]
       },
       {
-        "rotation": [-45, 0, 0],
+        "position": [0, 3, -4],
+        "rotation": [0, 180, 0],
+        "scale": [0.5, 0.5, 0.5],
         "components": [
           {
-            "type": "Mesh Renderer",
-            "mesh": "monkey",
-            "material": "monkey"
-          },
-          {
-            "type": "Movement",
-            "linearVelocity": [0, 0.1, 0],
-            "angularVelocity": [0, 45, 0]
+            "type": "Light",
+            "light_type": "POINT",
+            "ambient": [1, 1, 0],
+            "diffuse": [1, 1, 0],
+            "specular": [1, 1, 0]
           }
         ]
       },
@@ -176,83 +421,332 @@
           {
             "type": "Mesh Renderer",
             "mesh": "plane",
-            "material": "grass"
+            "material": "floor"
           }
         ]
       },
       {
-        "position": [0, 1, 2],
+        "name": "bush",
+        "position": [0, -1, -10],
         "rotation": [0, 0, 0],
-        "scale": [2, 2, 2],
+        "scale": [10, 1, 0.2],
         "components": [
           {
             "type": "Mesh Renderer",
-            "mesh": "plane",
-            "material": "glass"
+            "mesh": "cube",
+            "material": "blackbox"
           }
         ]
       },
       {
-        "position": [0, 1, -2],
+        "name": "bush",
+        "position": [0, -1, 1],
         "rotation": [0, 0, 0],
-        "scale": [2, 2, 2],
+        "scale": [5, 1, 0.2],
         "components": [
           {
             "type": "Mesh Renderer",
-            "mesh": "plane",
-            "material": "glass"
+            "mesh": "cube",
+            "material": "bushes"
           }
         ]
       },
       {
-        "position": [2, 1, 0],
-        "rotation": [0, 90, 0],
-        "scale": [2, 2, 2],
+        "name": "bush",
+        "position": [-2, -1, 7],
+        "rotation": [0, 0, 0],
+        "scale": [5, 1, 0.2],
         "components": [
           {
             "type": "Mesh Renderer",
-            "mesh": "plane",
-            "material": "glass"
+            "mesh": "cube",
+            "material": "bushes"
           }
         ]
       },
       {
-        "position": [-2, 1, 0],
-        "rotation": [0, 90, 0],
-        "scale": [2, 2, 2],
+        "name": "bush",
+        "position": [-2, -1, 1],
+        "rotation": [0, 0, 0],
+        "scale": [0.5, 1, 8],
         "components": [
           {
             "type": "Mesh Renderer",
-            "mesh": "plane",
-            "material": "glass"
+            "mesh": "cube",
+            "material": "bushes"
           }
         ]
       },
       {
-        "position": [0, 3, 0],
-        "rotation": [90, 0, 0],
-        "scale": [2, 2, 2],
+        "name": "bush",
+        "position": [-10, -1, 0],
+        "rotation": [0, 0, 0],
+        "scale": [0.5, 1, 10],
         "components": [
           {
             "type": "Mesh Renderer",
-            "mesh": "plane",
-            "material": "glass"
+            "mesh": "cube",
+            "material": "blackbox"
           }
         ]
       },
       {
-        "position": [0, 10, 0],
-        "rotation": [45, 45, 0],
-        "scale": [5, 5, 5],
+        "name": "bush",
+        "position": [10, -1, 0],
+        "rotation": [0, 0, 0],
+        "scale": [0.5, 1, 10],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "cube",
+            "material": "blackbox"
+          }
+        ]
+      },
+      {
+        "name": "bush",
+        "position": [4, -1, 3],
+        "rotation": [0, 0, 0],
+        "scale": [4, 1, 0.2],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "cube",
+            "material": "bushes"
+          }
+        ]
+      },
+      {
+        "name": "bush",
+        "position": [3, -1, -1],
+        "rotation": [0, 0, 0],
+        "scale": [0.5, 1, 7],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "cube",
+            "material": "bushes"
+          }
+        ]
+      },
+      {
+        "name": "coin",
+        "position": [7, -0.3, 1],
+        "rotation": [0, 0, 0],
+        "scale": [0.3, 0.3, 0.07],
         "components": [
           {
             "type": "Mesh Renderer",
             "mesh": "sphere",
-            "material": "moon"
+            "material": "coin"
           },
           {
             "type": "Movement",
-            "angularVelocity": [0, 90, 0]
+            "linearVelocity": [0, 0, 0],
+            "angularVelocity": [0, 45, 0]
+          },
+          {
+            "type": "Collision",
+            "center": [0.03, 0.03, 0.03],
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "coin",
+        "position": [-4, -0.3, 8],
+        "rotation": [0, 0, 0],
+        "scale": [0.3, 0.3, 0.07],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "sphere",
+            "material": "coin"
+          },
+          {
+            "type": "Movement",
+            "linearVelocity": [0, 0, 0],
+            "angularVelocity": [0, 45, 0]
+          },
+          {
+            "type": "Collision",
+            "center": [0.03, 0.03, 0.03],
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "coin",
+        "position": [6, -0.3, 8],
+        "rotation": [0, 0, 0],
+        "scale": [0.3, 0.3, 0.07],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "sphere",
+            "material": "coin"
+          },
+          {
+            "type": "Movement",
+            "linearVelocity": [0, 0, 0],
+            "angularVelocity": [0, 45, 0]
+          },
+          {
+            "type": "Collision",
+            "center": [0.03, 0.03, 0.03],
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "coin",
+        "position": [8, -0.3, -5],
+        "rotation": [0, 0, 0],
+        "scale": [0.3, 0.3, 0.07],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "sphere",
+            "material": "coin"
+          },
+          {
+            "type": "Movement",
+            "linearVelocity": [0, 0, 0],
+            "angularVelocity": [0, 45, 0]
+          },
+          {
+            "type": "Collision",
+            "center": [0.03, 0.03, 0.03],
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "coin",
+        "position": [1, -0.3, -5],
+        "rotation": [0, 0, 0],
+        "scale": [0.3, 0.3, 0.07],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "sphere",
+            "material": "coin"
+          },
+          {
+            "type": "Movement",
+            "linearVelocity": [0, 0, 0],
+            "angularVelocity": [0, 45, 0]
+          },
+          {
+            "type": "Collision",
+            "center": [0.03, 0.03, 0.03],
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "coin",
+        "position": [-4, -0.3, -10],
+        "rotation": [0, 0, 0],
+        "scale": [0.3, 0.3, 0.07],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "sphere",
+            "material": "coin"
+          },
+          {
+            "type": "Movement",
+            "linearVelocity": [0, 0, 0],
+            "angularVelocity": [0, 45, 0]
+          },
+          {
+            "type": "Collision",
+            "center": [0.03, 0.03, 0.03],
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "coin",
+        "position": [-4, -0.3, 5],
+        "rotation": [0, 0, 0],
+        "scale": [0.3, 0.3, 0.07],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "sphere",
+            "material": "coin"
+          },
+          {
+            "type": "Movement",
+            "linearVelocity": [0, 0, 0],
+            "angularVelocity": [0, 45, 0]
+          },
+          {
+            "type": "Collision",
+            "center": [0.03, 0.03, 0.03],
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "position": [-4, 1, -3],
+        "rotation": [45, 45, 90],
+        "scale": [0.5, 0.5, 0.5],
+        "components": [
+          {
+            "type": "Light",
+            "light_type": "POINT",
+            "ambient": [1, 1, 0],
+            "diffuse": [0.5, 0.5, 0],
+            "specular": [1, 1, 0]
+          }
+        ]
+      },
+      {
+        "name": "fish",
+        "position": [-4, -0.3, -3],
+        "rotation": [90, 0, 0],
+        "scale": [0.03, 0.02, 0.02],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "fish",
+            "material": "fish"
+          },
+          {
+            "type": "Collision",
+            "center": [0.03, 0.03, 0.03],
+            "radius": 0.5
+          }
+        ]
+      },
+      {
+        "name": "sun",
+        "position": [-4, 7, -3],
+        "components": [
+          {
+            "type": "Light",
+            "light_type": "DIRECTIONAL",
+            "color": [1, 1, 1],
+            "diffuse": [1, 0, 0],
+            "specular": [1, 1, 1],
+            "ambient": [0.5, 0.5, 0.5]
+          }
+        ]
+      },
+      {
+        "position": [0, 2, -1],
+        "rotation": [45, 45, 90],
+        "scale": [0.5, 0.5, 0.5],
+        "components": [
+          {
+            "type": "Light",
+            "light_type": "POINT",
+            "ambient": [1, 1, 0],
+            "diffuse": [0.5, 0.5, 0],
+            "specular": [1, 1, 0]
           }
         ]
       }

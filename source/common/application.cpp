@@ -325,6 +325,7 @@ int our::Application::run(int run_for_frames) {
         }
         
         ++current_frame;
+        
     }
 
     // Call for cleaning up

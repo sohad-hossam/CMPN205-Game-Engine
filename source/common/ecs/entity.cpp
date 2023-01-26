@@ -1,7 +1,6 @@
 #include "entity.hpp"
 #include "../deserialize-utils.hpp"
 #include "../components/component-deserializer.hpp"
-
 #include <glm/gtx/euler_angles.hpp>
 
 namespace our {

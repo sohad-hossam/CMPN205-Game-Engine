@@ -2,13 +2,13 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\Users\sohad\Desktop\oursC\CMPN205-Game-Engine-main\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\bin\GAME_APPLICATION.exe</FullPath>
+      <FullPath>C:\Users\sohad\Desktop\oursC\CMPN205-Game-Engine-main\bin\GAME_APPLICATION.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\sohad\Documents\University\Senior-1 Fall 2022\CMPN205 Computer graphics\CMPN205-Game-Engine\build\x64\Debug\ALL_BUILD</FullPath>
+      <FullPath>C:\Users\sohad\Desktop\oursC\CMPN205-Game-Engine-main\build\x64\Debug\ALL_BUILD</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

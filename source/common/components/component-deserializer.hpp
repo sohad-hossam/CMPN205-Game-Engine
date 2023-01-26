@@ -5,6 +5,9 @@
 #include "mesh-renderer.hpp"
 #include "free-camera-controller.hpp"
 #include "movement.hpp"
+#include "collisions.hpp"
+#include "win_lose.hpp"
+#include "light.hpp"
 
 namespace our {
 
@@ -14,17 +17,35 @@ namespace our {
         std::string type = data.value("type", "");
         Component* component = nullptr;
         //TODO: (Req 8) Add an option to deserialize a "MeshRendererComponent" to the following if-else statement
-        if(type == CameraComponent::getID()){
+        if(type == CameraComponent::getID())
+        {
             component = entity->addComponent<CameraComponent>();
-        } else if (type == FreeCameraControllerComponent::getID()) {
+        } 
+        else if (type == FreeCameraControllerComponent::getID()) 
+        {
             component = entity->addComponent<FreeCameraControllerComponent>();
-        } else if (type == MovementComponent::getID()) {
+        } 
+        else if (type == MovementComponent::getID()) 
+        {
             component = entity->addComponent<MovementComponent>();
         }
         else if(type == MeshRendererComponent::getID())
         {
-        component = entity->addComponent<MeshRendererComponent>();
+            component = entity->addComponent<MeshRendererComponent>();
         }
+        else if(type== CollisionComponent::getID())
+        {
+           component= entity->addComponent<CollisionComponent>();
+        }
+        else if(type== win_lose_Component::getID())
+        {
+            component= entity->addComponent<win_lose_Component>();
+        }
+        else if(type== LightComponent::getID())
+        {
+            component= entity->addComponent<LightComponent>();
+        }
+
         if(component) component->deserialize(data);
     }
 

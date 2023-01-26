@@ -40,8 +40,8 @@ namespace our {
         glm::vec3 eye = M * glm::vec4(0.0f, 0.0f, 0.0f, 1.0f);        //(0,0,0)
         //center is where the camera is looking at so we trasnfomation by M * 0,0,-1  "as z is -1"
         glm::vec3 center = M * glm::vec4(0.0f, 0.0f, -1.0f, 1.0f);    //(0,0,-1)
-        //center is where the camera is looking at so we trasnfomation by M * 0,0,-1  "as z is -1"
-        glm::vec3 up = M * glm::vec4(0.0f, 1.0f, 0.0f, 1.0f);         //(0,1,0)
+        //center is where the camera is looking at so we trasnfomation 
+        glm::vec3 up = M * glm::vec4(0.0f, 1.0f, 0.0f, 0.0f);         //(0,1,0)
        
         glm::mat4 view_matrix = glm::lookAt(eye, center, up);
 
